@@ -1,0 +1,30 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box{
+  width: 300px;
+  height: 120px;
+  background-color: gold;
+  padding: 1rem;
+}
+
+.container{
+  perspective: 200px;
+}
+
+.container:hover .box{
+  /* transform: translate(20px, 20px);  */
+  transform: scale(1.2) translateZ(50px) rotateY(20deg);
+  /* transform-origin: 0 50%; */
+  border: 2px solid lightcoral;
+}
+
+.container:hover .box-special{
+  background-color: lightgrey;
+  border: 2px solid lightgreen;
+
+}

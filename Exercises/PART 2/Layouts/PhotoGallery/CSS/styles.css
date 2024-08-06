@@ -1,0 +1,37 @@
+.container {
+  display: grid;
+  grid-template: 350px auto 350px / 30fr 70fr; /* fr : fraction */
+  grid-template-areas: 
+    "image1 image2"
+    "image3 image4";
+  gap: 10px;
+  border: 3px solid lightgray;
+  height: 100vh;
+}
+
+
+img{
+  width: 100px;
+}
+.box{
+  background-color: gold;
+}
+
+.image-a img{
+  grid-area: image1;
+  object-fit: cover;
+
+}
+.image-b img{
+  grid-area: image2;
+  object-fit: cover;
+}
+.image-c img{
+  grid-area: image3;
+  object-fit: cover;
+}
+.image-d img{
+  grid-area: image4;
+  object-fit: cover;
+}
+

@@ -1,0 +1,56 @@
+*, *::after,*::before{
+  box-sizing: border-box;
+}
+html{
+  /* 63.5% of 16px => 10px */
+  font-size: 62.5%;
+}
+
+body{
+  /* margin: 10px; */
+  /* width: 500px; */
+}
+
+
+p{
+  padding: 20px; /* trbl*/
+  /* border: 5px solid gold;
+  padding-left: 0px; */
+  margin: 0px;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  /* padding: 20px; */
+  background-color: aquamarine;
+  border: 5px solid salmon;
+display: inline-block;
+}
+
+.box::after{
+  content: "Hello";
+}
+
+.overflow{
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  border: 3px solid seagreen;
+  overflow: hidden auto;
+}
+
+.box2{
+  /* 50% width of the parent element */
+  /* 10em means 10x of font size of current element
+  if current element is not present it will go to parent  10 X 16px -> 160px */
+
+  /* rem -> width: 10 x font size of root element */
+  font-size: 20px;
+  width: 25rem;
+  height: 25rem;
+  margin-top: 10px;
+  background-color: papayawhip;
+  border-top: 3px solid orange;
+
+}

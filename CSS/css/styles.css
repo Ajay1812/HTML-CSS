@@ -1,0 +1,113 @@
+body{
+  margin: 10px;
+}
+
+/* a[] -> exact match if we use *= ""  it should match word is present in it*/
+/* a[href^="https"][href$=".com"]{ 
+  color: orange;
+} */
+
+/* #products > p{
+  color: orange;
+} */
+#products + p{
+  color: orange;
+}
+/* 
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
+} */
+/* article :last-of-type{
+  font-weight: bold;
+} */
+
+ul li:nth-child(odd){
+  color: cadetblue;
+  background-color: antiquewhite;
+}
+
+ul li:hover{
+  color: deeppink;
+  background-color: rgb(175, 204, 230);
+}
+
+a:visited, a:link{
+  color: dodgerblue;
+}
+/* :focus used for keyboard users for hovering using tab */
+a:hover, a:focus{
+  color: deeppink ;
+}
+
+/* p::first-letter {
+  color: mediumvioletred;
+  font-size: 140% ;
+  font-weight: bolder;
+} */
+
+p.first-para::first-line{
+  font-size: 140%;
+  font-weight: bold;
+}
+
+::selection{
+  background-color: pink;
+}
+
+/* p::before{
+  content: '...';
+  display: block;
+} */
+p::after{
+  content: '...';
+  display: block;
+}
+
+h1{
+  color: dodgerblue;
+}
+
+.highlight{
+  color: navajowhite;
+  
+}
+
+#heading{
+  color: green;
+}
+.highlight#heading{
+  color: blueviolet;
+}
+.paragraph{
+  color: dodgerblue;
+  font-size: 150%;
+  border: 3px solid rgb(185, 79, 79);
+}
+
+strong{
+  color: initial;
+  border: inherit;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  /* background-color: rgba(153, 180, 209, 0.6); */
+  /* background: linear-gradient(45deg, dodgerblue, brown, yellow ); */
+  /* background: rgb(35,215,166); */
+/* background: linear-gradient(45deg, rgba(35,215,166,1) 4%, rgba(238,145,8,1) 82%); */
+  /* background: radial-gradient(circle at top left,white,orange); */
+  /* border: 10px dashed royalblue; */
+  /* border-width: 40px 30px 20px 10px; trbl */
+  /* border-radius: 100%; */
+  background-color: dodgerblue;
+  box-shadow: 0 0 10px grey;
+}
+
+h1{
+  color: white ;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2 );
+}
+
+

@@ -1,0 +1,28 @@
+/* aligning items */
+/* justify-content (along the main axis) */
+/* align-items (along the cross axis) */
+
+.continer{
+  border: 3px solid grey;
+  display: flex;
+  flex-direction: row; /* default value - row */
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.box{
+  flex-basis: 15rem;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex: 1 1 15rem; /* flex-grow > flex-shrink > flex-basis*/
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  margin: 1rem;
+}
+
+.box-one{
+  /* flex-basis: 5rem; */
+  flex-shrink: 0;
+}

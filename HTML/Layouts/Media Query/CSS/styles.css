@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: gold; */
+}
+
+.box{
+  background-color: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2){
+  background-color: dodgerblue;
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    flex-direction: row;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .container{
+    flex-direction: row;
+  }
+  .box{
+    background-color: white;
+  }
+  .box:nth-of-type(2){
+    background-color: rgb(195, 32, 32);
+  }
+  .box:hover{
+    background-color: seagreen;
+  }
+}
+
+@media print {
+  body{
+    font-size: 16pt;
+    background-color: green;
+  }
+  .box{
+    color: orange;
+  }
+}

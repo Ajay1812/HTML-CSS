@@ -1,0 +1,48 @@
+:root{
+  --primary-color: #00ffff;
+  --border-size:3px
+  --background-color: #fa8072;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes pop {
+  0%{
+    transform: scale(1 );
+  }
+  25%{
+    transform: scale(1.3);
+    border: var(--border-size) solid slateblue
+  }
+  50%{
+    transform: rotate(25deg);
+    background-color: #fa8072;
+    border-radius: 15px;
+    border: 3px solid slateblue;
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
+.box{
+  width: 300px;
+  height: 100px;
+  background-color: #00ffff;
+  padding: 1rem;
+  /* animation-name: pop;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-direction: alternate; */
+}
+
+.animation-pop{
+  animation: pop 3s ease-out 2s infinite alternate;
+}

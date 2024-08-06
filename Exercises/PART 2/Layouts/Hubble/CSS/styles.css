@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+@font-face {
+  font-family: 'open Sans';
+  src: url('Fonts/opensans-bold-webfont.woff2') format('woff2'),
+  url('Fonts/opensans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('Fonts/opensans-regular-webfont.woff2') format('woff2'),
+  url('Fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+body{
+  font-family: 'open Sans';
+}
+
+.container{
+  width: 100%;
+}
+
+img{
+  width: 89rem;
+  object-fit: contain;
+  clip-path: polygon(80% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 0);
+
+}
+
+.hubble{
+  font-size: 4rem;
+  font-family:  'open Sans';
+  font-weight: 900;
+  color: linen;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  justify-content: center;
+  z-index: 1;
+}
+
+.text{
+  font-size: 2rem;
+  font-weight: 500;
+  color: linen;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  justify-content: center;
+  border: 3px solid lightcyan;
+  padding: 1rem;
+  z-index: 1;
+}
