@@ -2,3 +2,5 @@ psd/
 fonts/
 .log
 node_modules/
+dist/
+.cache/
